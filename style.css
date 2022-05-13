@@ -1,0 +1,115 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 110rem;
+    overflow: hidden;
+    border: 1rem solid white;
+}
+
+.content-align {
+    display: flex;
+    width: 500%;
+    height: 90%;
+}
+
+.mem {
+    width: 20%;
+    transition: all .6s ease;
+}
+
+.mem-slide {
+   width: 100%;
+   height: 100%;
+   transition: .5s;
+    
+}
+
+.invisible {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10%;
+}
+
+.nav-button {
+    width: 3rem;
+    height: 0.8rem;
+    background-color: aquamarine;
+    margin: 0.6rem;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.mem-signatures {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper-signatures{
+    display: flex;
+}
+
+
+.signature1, .signature2, .signature3, .signature4, .signature5 {
+    font-size: 2rem;
+}
+
+.signature2, .signature3, .signature4, .signature5 {
+    opacity: 0;
+}
+
+
+#radio-button-first:checked ~ .content-align > .s1 {
+    margin-left: 0;
+}
+
+#radio-button-second:checked ~ .content-align > .s1 {
+    margin-left: -20%;
+}
+#radio-button-third:checked ~ .content-align > .s1 {
+    margin-left: -40%;
+}
+#radio-button-fourth:checked ~ .content-align > .s1 {
+    margin-left: -60%;
+}
+#radio-button-fifth:checked ~ .content-align > .s1 {
+    margin-left: -80%;
+}
+
+
+#radio-button-first:checked ~ .mem-signatures > .wrapper-signatures > .sign1 {
+    opacity: 1;
+}
+
+#radio-button-second:checked ~ .mem-signatures > .wrapper-signatures > .sign2 {
+    opacity: 1;
+}
+#radio-button-third:checked ~ .mem-signatures >  .wrapper-signatures > .sign3 {
+    opacity: 1;
+}
+#radio-button-fourth:checked ~ .mem-signatures >  .wrapper-signatures > .sign4 {
+    opacity: 1;
+}
+#radio-button-fifth:checked ~ .mem-signatures > .wrapper-signatures > .sign5 {
+    opacity: 1;
+} 
