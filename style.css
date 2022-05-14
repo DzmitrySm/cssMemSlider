@@ -2,6 +2,12 @@ html {
     font-size: 62.5%;
 }
 
+
+@font-face {
+    font-family: Roboto sans-serif;
+    src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -13,8 +19,8 @@ body {
 .slider {
     display: flex;
     flex-direction: column;
-    background-color: grey;
-    width: 110rem;
+    background-color: #D2A658;
+    width: 90rem;
     overflow: hidden;
     border: 1rem solid white;
 }
@@ -45,19 +51,26 @@ body {
 
 .navigation-buttons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 10%;
 }
 
 .nav-button {
-    width: 3rem;
-    height: 0.8rem;
-    background-color: aquamarine;
-    margin: 0.6rem;
+    width: 4rem;
+    height: 4rem;
     transition: all .4s ease;
     cursor: pointer;
 }
+
+.button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
 
 .mem-signatures {
     display: flex;
@@ -67,7 +80,32 @@ body {
 
 .wrapper-signatures{
     display: flex;
+    width: 50%;
 }
+
+span {
+    white-space: nowrap;
+    margin: 1rem 0;
+    font-family: Roboto sans-serif;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button:hover > .button{
+background-color: beige;
+transition: all .9s ease;
+}
+
+.nav-button:active > .button{
+    background-color: green;
+    transition: all .9s ease;
+    }
 
 
 .signature1, .signature2, .signature3, .signature4, .signature5 {
@@ -75,7 +113,7 @@ body {
 }
 
 .signature2, .signature3, .signature4, .signature5 {
-    opacity: 0;
+    visibility: hidden;
 }
 
 
@@ -98,18 +136,142 @@ body {
 
 
 #radio-button-first:checked ~ .mem-signatures > .wrapper-signatures > .sign1 {
-    opacity: 1;
+    visibility: visible;
 }
 
 #radio-button-second:checked ~ .mem-signatures > .wrapper-signatures > .sign2 {
-    opacity: 1;
+    visibility: visible;
 }
 #radio-button-third:checked ~ .mem-signatures >  .wrapper-signatures > .sign3 {
-    opacity: 1;
+    visibility: visible;
 }
 #radio-button-fourth:checked ~ .mem-signatures >  .wrapper-signatures > .sign4 {
-    opacity: 1;
+    visibility: visible;
 }
 #radio-button-fifth:checked ~ .mem-signatures > .wrapper-signatures > .sign5 {
-    opacity: 1;
+    visibility: visible;
 } 
+
+
+#radio-button-first:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
+    margin-left: 1rem;
+}
+
+#radio-button-second:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
+    margin-left: -107.5%;
+}
+#radio-button-third:checked ~ .mem-signatures >  .wrapper-signatures > .f1 {
+    margin-left: -211%;
+}
+#radio-button-fourth:checked ~ .mem-signatures >  .wrapper-signatures > .f1 {
+    margin-left: -278%;
+}
+#radio-button-fifth:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
+    margin-left: -359%;
+}
+
+
+
+#radio-button-first:checked ~ .mem-signatures > .navigation-buttons > .nav-button > .click1 {
+    background-color: red;
+}
+
+#radio-button-second:checked ~ .mem-signatures > .navigation-buttons > .nav-button > .click2 {
+    background-color: red
+}
+#radio-button-third:checked ~ .mem-signatures >  .navigation-buttons > .nav-button > .click3 {
+    background-color: red
+}
+#radio-button-fourth:checked ~ .mem-signatures >  .navigation-buttons > .nav-button > .click4 {
+    background-color: red
+}
+#radio-button-fifth:checked ~ .mem-signatures > .navigation-buttons > .nav-button > .click5 {
+    background-color: red
+} 
+
+
+
+@media screen and (max-width: 930px) {
+    .slider {
+        flex-direction: column;
+        width: 70rem;
+}
+
+#radio-button-second:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
+    margin-left: -138.5%;
+}
+#radio-button-third:checked ~ .mem-signatures >  .wrapper-signatures > .f1 {
+    margin-left: -272%;
+}
+#radio-button-fourth:checked ~ .mem-signatures >  .wrapper-signatures > .f1 {
+    margin-left: -358%;
+}
+#radio-button-fifth:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
+    margin-left: -462%;
+} 
+}
+
+
+@media screen and (max-width: 724px) {
+    .slider {
+        width: 50rem;
+}
+
+.mem-signatures {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.signature1, .signature2, .signature3, .signature4, .signature5 {
+    font-size: 1.6rem;
+} 
+
+
+.wrapper-signatures {
+    align-self: flex-start;
+}
+
+#radio-button-second:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
+    margin-left: -155.5%;
+}
+#radio-button-third:checked ~ .mem-signatures >  .wrapper-signatures > .f1 {
+    margin-left: -306%;
+}
+#radio-button-fourth:checked ~ .mem-signatures >  .wrapper-signatures > .f1 {
+    margin-left: -403%;
+}
+#radio-button-fifth:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
+    margin-left: -520%;
+} 
+
+
+}
+
+@media screen and (max-width: 524px) {
+    .slider {
+        width: 35rem;
+}
+
+
+.signature1, .signature2, .signature3, .signature4, .signature5 {
+    font-size: 1.3rem;
+} 
+
+#radio-button-second:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
+    margin-left: -180.5%;
+}
+#radio-button-third:checked ~ .mem-signatures >  .wrapper-signatures > .f1 {
+    margin-left: -357%;
+}
+#radio-button-fourth:checked ~ .mem-signatures >  .wrapper-signatures > .f1 {
+    margin-left: -470%;
+}
+#radio-button-fifth:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
+    margin-left: -608%;
+} 
+
+}
+
+
