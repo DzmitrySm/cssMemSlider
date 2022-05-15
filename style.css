@@ -2,7 +2,6 @@ html {
     font-size: 62.5%;
 }
 
-
 @font-face {
     font-family: Roboto sans-serif;
     src: url("./assets/fonts/Roboto-Regular.ttf");
@@ -73,7 +72,6 @@ body {
     background-color: #4A4424;
 }
 
-
 .mem-signatures {
     display: flex;
     align-items: center;
@@ -99,8 +97,6 @@ label{
     justify-content: center;
 }
 
-
-
 .nav-button:hover > .button{
 background-color: beige;
 border-color: none;
@@ -111,9 +107,6 @@ transition: all .9s ease;
     background-color: gold;
     transition: all .9s ease;
     }
-
-
-
 
 .signature1, .signature2, .signature3, .signature4, .signature5 {
     font-size: 2rem;
@@ -127,7 +120,6 @@ transition: all .9s ease;
     0%   { visibility: hidden; }
     100% { visibility: visible;}
 }
-
 
 #radio-button-first:checked ~ .content-align > .s1 {
     margin-left: 0;
@@ -145,7 +137,6 @@ transition: all .9s ease;
 #radio-button-fifth:checked ~ .content-align > .s1 {
     margin-left: -80%;
 }
-
 
 #radio-button-first:checked ~ .mem-signatures > .wrapper-signatures > .sign1 {
     visibility: visible;
@@ -174,7 +165,6 @@ transition: all .9s ease;
     transition-delay: 500ms;
 } 
 
-
 #radio-button-first:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
     margin-left: 1rem;
 }
@@ -191,8 +181,6 @@ transition: all .9s ease;
 #radio-button-fifth:checked ~ .mem-signatures > .wrapper-signatures > .f1 {
     margin-left: -359%;
 }
-
-
 
 #radio-button-first:checked ~ .mem-signatures > .navigation-buttons > .nav-button > .click1 {
     background-color: transparent;
@@ -238,8 +226,6 @@ transition: all .9s ease;
     transition: all .9s ease;
 }
 
-
-
 #radio-button-first:checked ~ .mem-signatures > .navigation-buttons > .nav-button > .click1:active {
     background-color: gold;
     transition: all .9s ease;
@@ -261,8 +247,6 @@ transition: all .9s ease;
     background-color: gold;
     transition: all .9s ease;
 } 
-
-
 
 @media screen and (max-width: 930px) {
     .slider {
