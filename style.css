@@ -103,6 +103,7 @@ label{
 
 .nav-button:hover > .button{
 background-color: beige;
+border-color: none;
 transition: all .9s ease;
 }
 
@@ -210,32 +211,34 @@ transition: all .9s ease;
     background-color: transparent;
 } 
 
-#radio-button-first:checked ~ .mem-signatures > .navigation-buttons > .nav-button > .click1:hover {
+#radio-button-first:checked ~ .mem-signatures > .navigation-buttons > .nav-button:hover > .click1 {
     background-color: transparent;
     border-color: black;
     transition: all .9s ease;
 }
 
-#radio-button-second:checked ~ .mem-signatures > .navigation-buttons > .nav-button > .click2:hover {
+#radio-button-second:checked ~ .mem-signatures > .navigation-buttons > .nav-button:hover > .click2 {
     background-color: transparent;
     border-color: black;
     transition: all .9s ease;
 }
-#radio-button-third:checked ~ .mem-signatures >  .navigation-buttons > .nav-button > .click3:hover {
+#radio-button-third:checked ~ .mem-signatures >  .navigation-buttons > .nav-button:hover > .click3 {
     background-color: transparent;
     border-color: black;
     transition: all .9s ease;
 }
-#radio-button-fourth:checked ~ .mem-signatures >  .navigation-buttons > .nav-button > .click4:hover {
+#radio-button-fourth:checked ~ .mem-signatures >  .navigation-buttons > .nav-button:hover > .click4 {
     background-color: transparent;
     border-color: black;
     transition: all .9s ease;
 }
-#radio-button-fifth:checked ~ .mem-signatures > .navigation-buttons > .nav-button > .click5:hover {
+#radio-button-fifth:checked ~ .mem-signatures > .navigation-buttons > .nav-button:hover > .click5 {
     background-color: transparent;
     border-color: black;
     transition: all .9s ease;
-} 
+}
+
+
 
 #radio-button-first:checked ~ .mem-signatures > .navigation-buttons > .nav-button > .click1:active {
     background-color: gold;
